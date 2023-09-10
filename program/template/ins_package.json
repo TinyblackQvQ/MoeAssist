@@ -1,0 +1,26 @@
+{
+  "template package": {
+    "name": {
+      "en_us": "template package",
+      "zh_cn": "示例包模板"
+    },
+    "path": "template/template_package",
+    "author": "author",
+    "version": "1.0.0",
+    "security": "safe",
+    "type": "maScript",
+    "tags": {
+      "en_us": [
+        "Arknights"
+      ],
+      "zh_cn": [
+        "明日方舟"
+      ]
+    },
+    "application": [
+      "com.hypergraph.arknights",
+      "com.hypergraph.arknights.bilibili"
+    ],
+    "ref": "https://www.github.com/exampleuser/examplerepo/archive/refs/heads/main.zip"
+  }
+}
