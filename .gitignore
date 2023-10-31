@@ -1,0 +1,12 @@
+# Pycharm
+.idea/
+
+# Python
+python-embed-64x/
+
+# node
+node_modules/
+
+# dev
+runtime/
+out/
