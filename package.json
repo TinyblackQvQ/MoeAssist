@@ -1,0 +1,23 @@
+{
+  "name": "moe-assist",
+  "version": "0.1.0",
+  "description": "none",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinyblackQvQ/MoeAssist.git"
+  },
+  "author": "Tinyblack",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/TinyblackQvQ/MoeAssist/issues"
+  },
+  "homepage": "https://github.com/TinyblackQvQ/MoeAssist#readme",
+  "devDependencies": {
+    "electron": "^27.0.2"
+  }
+}

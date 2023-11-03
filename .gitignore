@@ -10,3 +10,8 @@ node_modules/
 # dev
 runtime/
 out/
+runProcess.bat
+
+# sources
+## html images
+gui/src/image

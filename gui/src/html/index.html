@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <script src="../js/index.js"></script>
+    <script src="../nodeApi/lang_preload.js"></script>
+</head>
+
+<body>
+    <div id="sidebar">
+        <button class="sidebar feature" onclick="changePanel('home')">
+            <img src="../image/index/home.png" alt="home">
+            <span text="ma.gui.index.sidebar.homepage">feature1</span></button>
+        <button class="sidebar feature" onclick="changePanel('script')">
+            <img src="../image/index/plan-list.png" alt="home">
+            <span text="ma.gui.index.sidebar.scriptList">feature2</span></button>
+        <button class="sidebar feature" onclick="changePanel('plan')">
+            <img src="../image/index/script.png" alt="home">
+            <span text="ma.gui.index.sidebar.planList">feature3</span></button>
+        <button class="sidebar feature" onclick="changePanel('download')">
+            <img src="../image/index/download.png" alt="home">
+            <span text="ma.gui.index.sidebar.download">feature4</span></button>
+        <button class="sidebar feature" onclick="changePanel('settings')">
+            <img src="../image/index/settings.png" alt="home">
+            <span text="ma.gui.index.sidebar.settings">feature5</span></button>
+    </div>
+    <div id="container">
+        <div class="panel" id="home">this is home panel</div>
+        <div class="panel" id="plan">this is plan panel</div>
+        <div class="panel" id="script">this is script panel</div>
+        <div class="panel" id="download">this is download panel</div>
+        <div class="panel" id="settings">this is settings panel</div>
+    </div>
+</body>
+
+</html>

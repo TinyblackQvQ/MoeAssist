@@ -23,11 +23,11 @@ class Lang:
         en_file_handle = open(en_lang_file, "r")
         # read en_us first
         # 先读取英文语言文件
-        self._read_filehandle(en_file_handle, "moeAssist")
+        self._read_filehandle(en_file_handle, "ma")
         # then read other lang file, it will automatically replace the value in en_us lang list
         # 再读取其他语言的文件，这样即使其他语言文件存在缺失部分，也会默认显示英文
         if cur_lang != "en_us":
-            self._read_filehandle(file_handle, "moeAssist")
+            self._read_filehandle(file_handle, "ma")
         en_file_handle.close()
         file_handle.close()
 

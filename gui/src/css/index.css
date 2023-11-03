@@ -1,0 +1,102 @@
+/* 侧边栏 */
+#sidebar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 45px;
+    height: 100%;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    overflow: hidden;
+
+    border: solid 2px rgb(190, 190, 190);
+    border-style: hidden solid hidden hidden;
+
+    transition: 0.4s;
+}
+
+#sidebar:hover {
+    width: 200px;
+}
+
+/* 侧边栏悬浮，内部文本动画 */
+button.sidebar.feature>span {
+    opacity: 10%;
+    transition: 0.25s;
+}
+
+#sidebar:hover>button.sidebar.feature>span {
+    top: 0px;
+    opacity: 100%;
+}
+
+/* 侧边栏按钮 */
+button.sidebar.feature {
+    position: relative;
+    height: 45px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    border: 2px rgb(190, 190, 190);
+    border-style: hidden hidden solid hidden;
+
+    transition: 0.3s;
+}
+
+/* 侧边栏按钮，鼠标悬浮动画 */
+button.sidebar.feature:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+/* 侧边栏图标样式 */
+button.sidebar.feature>img {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin-left: 3px;
+}
+
+/*各个面板的容器*/
+#container {
+    position: fixed;
+    top: 0px;
+    left: 47px;
+    height: 100%;
+    width: 100%;
+}
+
+/*面板*/
+.panel {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    z-index: -10;
+
+    display: none;
+
+    text-align: center;
+
+    animation: panelShowUp 0.5s 1 ease-in-out;
+}
+
+@keyframes panelShowUp {
+    0% {
+        top: 0px;
+        opacity: 0%;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 100%;
+    }
+}
