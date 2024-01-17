@@ -8,6 +8,8 @@ python-embed-64x/
 node_modules/
 
 # dev
+*.pyc
+*/__pycache__
 runtime/
 out/
 runProcess.bat

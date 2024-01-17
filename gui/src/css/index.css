@@ -91,7 +91,7 @@ button.sidebar.feature>img {
 
 @keyframes panelShowUp {
     0% {
-        top: 0px;
+        top: 30px;
         opacity: 0%;
     }
 
